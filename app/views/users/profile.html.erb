@@ -1,0 +1,10 @@
+<div class="container">
+  <h1>Mon Compte</h1>
+
+  <ul>
+  <% @scooters.each do |scooter| %>
+      <li><%= scooter.marque %></li>
+  <% end %>
+  </ul>
+  <%= link_to 'New Scooter', new_scooter_path%>
+</div>
